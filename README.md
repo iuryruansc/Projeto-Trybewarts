@@ -1,8 +1,16 @@
 # Boas-vindas ao repositório do projeto Trybewarts Wizarding School! 🧙
 
-Para realizar o projeto, atente-se a cada passo descrito a seguir, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
+# Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+<ul>
+  <li>HTML e CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+# Visite o projeto online:
+<ul>
+  <li>https://iuryruansc.github.io/Projeto-Trybewarts/</li>
+</ul>
 
 # Termos e acordos
 

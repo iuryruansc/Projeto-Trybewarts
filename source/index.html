@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header container-fluid">
+        <img src="/images/trybewarts-header-logo.svg" alt="tryberwarts-logo" class="trybewarts-header-logo">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form action="" class="trybewarts-login row">
+            <div class="col-sm-4">
+                <input type="email" name="email" id="login" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-sm-4">
+                <input type="password" name="password" id="password" placeholder="Senha" class="form-control" required>
+            </div>
+            <div class="col-sm-4">
+                <button type="submit" id="submit-login" class="btn btn-primary">Entrar</button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <form action="" id="evaluation-form" class="needs-validation" novalidate>
+        <div class="container">
+            <div class="row row-col-sm-2" id="form-row">
+                <div class="col-md-6 gy-4">
+                    <input type="text" id="input-name" placeholder="Nome" class="form-control" minlength="2" required>
+                </div>
+                <div class="col-md-6 gy-4">
+                    <input type="text" id="input-lasname" placeholder="Sobrenome" class="form-control" minlength="2" required>
+                </div>
+                <div class="col-sm-6 gy-4">
+                    <input type="email" id="input-email" placeholder="Email" class="form-control" required>
+                </div>
+                <div class="col-sm-6 gy-4">
+                    <select name="" id="house" class="form-select" aria-label="Default select example" required>
+                        <option selected value="">Escolha uma casa</option>
+                        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                    </select>
+                </div>
+
+                <div class="col-12 gy-4" id="divisor"></div>
+
+                <div class="col gy-3">
+                    <div class="col">
+                        <label id="label-family" for="">Qual sua família?</label>
+                    </div>
+                    <div class="col mt-2">
+                        <div class="form-check mb-2"><input type="radio" name="family" value="Frontend" class="form-check-input" required> Frontend</div>
+                        <div class="form-check mb-2"><input type="radio" name="family" value="Backend" class="form-check-input" required> Backend</div>
+                        <div class="form-check mb-2"><input type="radio" name="family" value="Fullstack" class="form-check-input" required> Fullstack</div>
+                    </div>
+                </div>
+                <div class="col gy-3 mb">
+                    <div class="col">
+                        <label id="label-content" for="subject">Qual(is) conteúdo(s) você está com mais vontade de aprender?</label>
+                    </div>
+                    <div class="col mt-2">
+                        <div class="form-check form-check-inline"><input class="form-check-input learn" type="checkbox" name="content" value="HoFs" id="content-1">HoFs</div>
+                        <div class="form-check form-check-inline"><input class="form-check-input learn" type="checkbox" name="content" value="Jest" id="content-2">Jest</div>
+                        <div class="form-check form-check-inline"><input class="form-check-input learn" type="checkbox" name="content" value="Promises" id="content-3">Promises</div>
+                        <div class="form-check form-check-inline"><input class="form-check-input learn" type="checkbox" name="content" value="React" id="content-4">React</div>
+                        <div class="form-check form-check-inline"><input class="form-check-input learn" type="checkbox" name="content" value="SQL" id="content-5">SQL</div>
+                        <div class="form-check form-check-inline"><input class="form-check-input learn" type="checkbox" name="content" value="Python" id="content-6">Python</div>
+                    </div>   
+                </div>
+
+                <div class="col-12 gy-4" id="divisor"></div>
+
+                <div class="col-5 gy-4">
+                    <label id="label-rate" class="form-label" for="">Como você avalia a Trybewarts?</label>
+                </div>
+                <div class="col-7 gy-4">
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-1" value="1"> 1</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-2" value="2"> 2</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-3" value="3"> 3</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-4" value="4"> 4</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-5" value="5"> 5</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-6" value="6"> 6</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-7" value="7"> 7</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-8" value="8"> 8</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-9" value="9"> 9</div>
+                    <div class="form-check form-check-inline"><input required class="form-check-input" type="radio" name="rate" id="rate-10" value="10"> 10</div>
+                </div>
+                <div class="col-12 gy-4">
+                    <div class="col">
+                        <label class="textarea form-label" for="">Deixe seu comentário:</label>
+                    </div>
+                    <div class="col text-container">
+                        <textarea id="textarea" class="form-control" name="" id="" cols="30" rows="6" maxlength="500"></textarea>
+                        <span id="counter">500</span>
+                    </div>
+                </div>
+                <div class="col-12 gy-2">
+                    <label id="label-infos" class="form-check-label" for="agreement" required>Você concorda com o uso das informações acima?</label>
+                    <input class="form-check-input" type="checkbox" id="agreement">
+                </div>
+                <div class="col gy-2">
+                    <button id="submit-btn" class="btn btn-primary" type="submit" disabled>Enviar</button>
+                </div>
+            </div>
+        </div>
+        </form>
+        <img src="/images/trybewarts-colored.svg" alt="trybewarts-colored" id="trybewarts-forms-logo">
+    </main>
+    <footer>Direitos reservados à Trybewarts©</footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
